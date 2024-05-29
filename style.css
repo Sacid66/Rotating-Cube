@@ -41,7 +41,7 @@ body {
     position: absolute;
     width: 300px; /* Küp yüzeylerinin boyutunu büyüttüm */
     height: 300px; /* Küp yüzeylerinin boyutunu büyüttüm */
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
     border: 1px solid #ccc;
 }
 
