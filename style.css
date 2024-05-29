@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.control-item {
+    margin-bottom: 10px;
+}
+
+.cube-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1000px;
+}
+
+.cube {
+    width: 300px; /* Küpün boyutunu büyüttüm */
+    height: 300px; /* Küpün boyutunu büyüttüm */
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    cursor: grab;
+}
+
+.cube:active {
+    cursor: grabbing;
+}
+
+.cube div {
+    position: absolute;
+    width: 300px; /* Küp yüzeylerinin boyutunu büyüttüm */
+    height: 300px; /* Küp yüzeylerinin boyutunu büyüttüm */
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+}
+
+.cube .front  { transform: translateZ(150px); }
+.cube .back   { transform: rotateY(180deg) translateZ(150px); }
+.cube .left   { transform: rotateY(-90deg) translateZ(150px); }
+.cube .right  { transform: rotateY(90deg) translateZ(150px); }
+.cube .top    { transform: rotateX(90deg) translateZ(150px); }
+.cube .bottom { transform: rotateX(-90deg) translateZ(150px); }

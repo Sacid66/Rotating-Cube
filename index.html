@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Degree Rotating Cube with Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <div class="control-item">
+            <label for="bg-color">Background Color: </label>
+            <input type="color" id="bg-color" name="bg-color" value="#000000">
+        </div>
+        <div class="control-item">
+            <label for="music">Music: </label>
+            <select id="music">
+                <option value="song1.mp3">Song 1</option>
+                <option value="song2.mp3">Song 2</option>
+                <option value="song3.mp3">Song 3</option>
+                <option value="song4.mp3">Song 4</option>
+                <option value="song5.mp3">Song 5</option>
+            </select>
+        </div>
+        <div class="control-item">
+            <audio id="audio-player" controls>
+                <source src="song1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </div>
+    <div class="cube-container">
+        <div class="cube" id="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top"></div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
